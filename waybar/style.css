@@ -1,0 +1,215 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    min-height: 0;
+    font-family: "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free",FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+    margin-right: 8px;
+    border-radius: 30px;
+    transition: none;
+    background: #383c4a;
+}
+
+#workspaces button {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    color: #7aa2f7;
+    font-size: 22px;
+    transition: all 0.3s ease;
+
+}
+
+
+#workspaces button.active {
+    color: #ffffff;
+    background-color: #7aa2f7;  /* brighter blue highlight */
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: inset 0 -2px 0 0 #ffffff;  /* subtle underline */
+}
+
+
+
+#workspaces button.persistent {
+    color: #aaaaaa;
+    opacity: 1.0;
+    background-color: #383c4a; /* same as focused/unfocused bg */
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    transition: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: inherit;
+    color: #383c4a;
+    background: #7c818c;
+    opacity:0.7;
+}
+
+#workspaces button.focused {
+    color: white;
+}
+
+#language {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+
+#custom-pacman {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#clock {
+    padding: 0 16px;
+    background: #383c4a;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+#custom-weather {
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#pulseaudio {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#custom-mem {
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#temperature {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#custom-disk {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#tray {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 30px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#custom-ip {
+    background-color: #383c4a;
+    margin-left: 14px;
+    margin-right: 14px;
+    color: #ffffff;
+    padding: 14 14 14 14;
+    border-radius: 30px;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#custom-appmenu {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 20px;
+
+    background-color: #383c4a;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+#custom-memory {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 16px;
+    padding-right: 20px;
+
+    background-color: #383c4a;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
