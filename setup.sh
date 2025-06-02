@@ -34,7 +34,7 @@ else
 fi
 
 
-
+<
 chmod +x ~/.config/hypr/scripts/*.sh
 
 
@@ -51,3 +51,9 @@ sudo touch /etc/sddm.conf
 sudo sddm --example-config | sudo tee /etc/sddm.conf > /dev/null
 
 sudo cp ./sddm.conf /etc/sddm.conf
+
+
+
+
+# dev
+yay -S cursor
